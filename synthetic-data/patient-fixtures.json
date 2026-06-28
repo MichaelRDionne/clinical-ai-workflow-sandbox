@@ -1,0 +1,44 @@
+[
+  {
+    "id": "SYN-001",
+    "age_band": "adult",
+    "visit_type": "intake",
+    "presenting_concerns": ["low mood", "sleep disruption", "work stress"],
+    "current_focus": "Clarify symptom timeline and support plan.",
+    "medication_context": "No medication changes in this synthetic example.",
+    "monitoring": {
+      "needs_review": true,
+      "reason": "Baseline symptom scales not yet documented."
+    },
+    "risk_flags": ["passive stress language without plan or intent"],
+    "next_step": "Human clinician reviews intake summary and confirms safety screen."
+  },
+  {
+    "id": "SYN-002",
+    "age_band": "older adult",
+    "visit_type": "follow-up",
+    "presenting_concerns": ["anxiety", "missed appointment", "transportation barrier"],
+    "current_focus": "Reconnect after missed visit and confirm access needs.",
+    "medication_context": "Recent dose timing question requires clinician confirmation.",
+    "monitoring": {
+      "needs_review": true,
+      "reason": "Follow-up interval exceeded planned window."
+    },
+    "risk_flags": [],
+    "next_step": "Care team schedules follow-up and clinician reviews medication question."
+  },
+  {
+    "id": "SYN-003",
+    "age_band": "adult",
+    "visit_type": "medication check",
+    "presenting_concerns": ["improved sleep", "residual attention symptoms"],
+    "current_focus": "Assess response and tolerability before any next-step change.",
+    "medication_context": "Synthetic medication-change history retained as summary text only.",
+    "monitoring": {
+      "needs_review": false,
+      "reason": "No synthetic monitoring gap in this record."
+    },
+    "risk_flags": [],
+    "next_step": "Clinician confirms response, side effects, and patient preference."
+  }
+]
