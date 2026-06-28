@@ -12,6 +12,12 @@ This repository is designed as a public portfolio project. It demonstrates how I
 - Follow-up queue generation by risk and due date.
 - Safety checks for missing monitoring, escalation flags, and human review.
 
+## Recruiter Quick Scan
+
+This is a small but complete demonstration of how I approach clinical AI workflow design. It is not trying to be a production EHR integration. It shows the parts I care about most: structured inputs, summary generation, explicit risk flags, and review-before-action guardrails.
+
+Why it matters: clinical AI tools are easy to demo badly. A useful system has to make missing information visible, route uncertainty to a human, and avoid pretending that a generated summary is a clinical decision.
+
 ## Safety Boundary
 
 This repo contains no real patient data and no production clinical exports. Every example is synthetic and simplified for demonstration. It is not medical advice, not a diagnostic system, and not intended for direct clinical use.
@@ -29,6 +35,8 @@ Expected output:
 - A prioritized follow-up queue.
 - Safety flags that require human review.
 
+See `examples/demo-output.txt` for a captured example run.
+
 ## Project Structure
 
 ```text
@@ -44,3 +52,10 @@ examples/run_demo.py                  runnable demo
 - Clear escalation language.
 - Minimal automation until the workflow is understood.
 - Outputs should explain what they used and what they did not know.
+
+## Next Build Ideas
+
+- Add a synthetic CSV import path.
+- Add unit tests for queue priority and safety flags.
+- Add a Streamlit dashboard view for follow-up queues.
+- Add a model-evaluation rubric that compares generated summaries against expected structured outputs.

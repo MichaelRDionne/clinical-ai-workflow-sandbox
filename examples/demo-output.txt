@@ -1,0 +1,16 @@
+INTAKE SUMMARY
+SYN-001 synthetic intake summary: main concerns are low mood, sleep disruption, work stress. Current focus: Clarify symptom timeline and support plan. Medication context: No medication changes in this synthetic example. Human review required: Baseline symptom scales not yet documented.
+
+LONGITUDINAL SNAPSHOT
+- SYN-001: intake | focus=Clarify symptom timeline and support plan. | next=Human clinician reviews intake summary and confirms safety screen.
+- SYN-002: follow-up | focus=Reconnect after missed visit and confirm access needs. | next=Care team schedules follow-up and clinician reviews medication question.
+- SYN-003: medication check | focus=Assess response and tolerability before any next-step change. | next=Clinician confirms response, side effects, and patient preference.
+
+FOLLOW-UP QUEUE
+- SYN-001 [high]: risk language requires clinician review
+- SYN-002 [medium]: Follow-up interval exceeded planned window.
+- SYN-003 [routine]: no synthetic escalation flag
+
+SAFETY FLAGS
+- SYN-001: Risk language present: route to clinician review before action.; Monitoring gap present: confirm before closing follow-up.
+- SYN-002: Monitoring gap present: confirm before closing follow-up.
