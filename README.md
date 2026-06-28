@@ -37,6 +37,8 @@ Expected output:
 
 See `examples/demo-output.txt` for a captured example run.
 
+See `docs/scenario-walkthrough.md` for a recruiter-friendly explanation of what the workflow is modeling and where the automation boundary stops.
+
 ## Project Structure
 
 ```text
