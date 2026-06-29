@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic clinical workflow dashboard</title>
+  <desc id="desc">A synthetic clinical workflow dashboard showing intake summary, safety flags, and a prioritized follow-up queue.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f8f4; }
+      .ink { fill: #172026; font-family: Avenir, Helvetica, Arial, sans-serif; }
+      .white { fill: #ffffff; font-family: Avenir, Helvetica, Arial, sans-serif; }
+      .muted { fill: #68767c; font-family: Avenir, Helvetica, Arial, sans-serif; }
+      .panel { fill: #ffffff; stroke: #dce4df; stroke-width: 1.5; }
+      .panel-soft { fill: #f4faf7; stroke: #cfe0d8; stroke-width: 1.5; }
+      .teal { fill: #11615b; }
+      .gold { fill: #a46f1c; }
+      .red { fill: #a23b34; }
+      .line { stroke: #dce4df; stroke-width: 1.5; }
+      .tiny { font-size: 17px; font-weight: 700; letter-spacing: 1px; }
+      .body { font-size: 22px; }
+      .label { font-size: 18px; font-weight: 700; }
+      .title { font-size: 42px; font-weight: 800; }
+      .mono { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 18px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="720" rx="0"/>
+  <rect x="44" y="38" width="1112" height="92" rx="6" fill="#153f3b"/>
+  <text x="74" y="86" class="white title">Clinical AI Workflow Sandbox</text>
+  <text x="76" y="113" fill="#cfe4dd" font-family="Avenir, Helvetica, Arial, sans-serif" font-size="19">Synthetic intake summary, safety flags, and human-reviewed follow-up queue</text>
+
+  <rect x="44" y="158" width="340" height="438" rx="8" class="panel"/>
+  <text x="70" y="198" class="muted tiny">SYNTHETIC INPUT</text>
+  <text x="70" y="240" class="ink label">Record ID</text>
+  <text x="188" y="240" class="ink mono">SYN-1042</text>
+  <line x1="70" y1="264" x2="358" y2="264" class="line"/>
+  <text x="70" y="304" class="ink label">Visit Type</text>
+  <text x="188" y="304" class="ink body">Follow-up</text>
+  <text x="70" y="354" class="ink label">Concerns</text>
+  <text x="70" y="388" class="muted body">insomnia, focus,</text>
+  <text x="70" y="418" class="muted body">medication question</text>
+  <text x="70" y="464" class="ink label">Monitoring</text>
+  <text x="70" y="498" class="muted body">overdue checklist item</text>
+  <text x="70" y="550" class="ink label">Next Step</text>
+  <text x="70" y="584" class="muted body">clinician review before closeout</text>
+
+  <rect x="414" y="158" width="342" height="198" rx="8" class="panel-soft"/>
+  <text x="442" y="198" class="muted tiny">GENERATED SUMMARY</text>
+  <text x="442" y="242" class="ink body">Coded synthetic fields create</text>
+  <text x="442" y="274" class="ink body">a prep summary while keeping</text>
+  <text x="442" y="306" class="ink body">human review visible.</text>
+  <rect x="442" y="322" width="188" height="30" rx="15" fill="#dbeee8"/>
+  <text x="462" y="344" class="teal mono">review required</text>
+
+  <rect x="414" y="382" width="342" height="214" rx="8" class="panel"/>
+  <text x="442" y="422" class="muted tiny">SAFETY FLAGS</text>
+  <circle cx="456" cy="466" r="8" class="red"/>
+  <text x="478" y="474" class="ink body">Risk language present</text>
+  <circle cx="456" cy="520" r="8" class="gold"/>
+  <text x="478" y="528" class="ink body">Monitoring gap visible</text>
+  <circle cx="456" cy="574" r="8" class="teal"/>
+  <text x="478" y="582" class="ink body">No autonomous decision</text>
+
+  <rect x="786" y="158" width="370" height="438" rx="8" class="panel"/>
+  <text x="814" y="198" class="muted tiny">FOLLOW-UP QUEUE</text>
+  <rect x="814" y="222" width="314" height="52" rx="6" fill="#fbf1ef"/>
+  <text x="836" y="255" class="red label">High</text>
+  <text x="924" y="255" class="ink mono">SYN-1042</text>
+  <text x="836" y="294" class="muted body">clinician review before action</text>
+  <line x1="814" y1="322" x2="1128" y2="322" class="line"/>
+
+  <rect x="814" y="348" width="314" height="52" rx="6" fill="#fff6e6"/>
+  <text x="836" y="381" class="gold label">Medium</text>
+  <text x="946" y="381" class="ink mono">SYN-1038</text>
+  <text x="836" y="420" class="muted body">monitoring confirmation needed</text>
+  <line x1="814" y1="448" x2="1128" y2="448" class="line"/>
+
+  <rect x="814" y="474" width="314" height="52" rx="6" fill="#edf8f4"/>
+  <text x="836" y="507" class="teal label">Routine</text>
+  <text x="946" y="507" class="ink mono">SYN-1027</text>
+  <text x="836" y="546" class="muted body">no escalation flag</text>
+
+  <rect x="44" y="628" width="1112" height="44" rx="6" fill="#ffffff" stroke="#dce4df" stroke-width="1.5"/>
+  <text x="72" y="657" class="muted body">Synthetic only. No patient data, production exports, or automated decisions.</text>
+</svg>

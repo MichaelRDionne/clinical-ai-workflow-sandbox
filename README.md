@@ -4,6 +4,10 @@ Synthetic clinical workflow demo for intake summarization, longitudinal snapshot
 
 This repository is designed as a public portfolio project. It demonstrates how I think about clinical AI systems: reduce cognitive load, keep humans in control, make uncertainty visible, and keep sensitive data out of public demos.
 
+![Synthetic clinical workflow dashboard](assets/clinical-workflow-demo.svg)
+
+The visual demo shows the intended workflow shape: structured synthetic input, generated summary, visible safety flags, and a queue that routes uncertainty back to human review.
+
 ## What It Shows
 
 - Synthetic patient fixtures with coded IDs only.
