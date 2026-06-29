@@ -43,12 +43,19 @@ See `examples/demo-output.txt` for a captured example run.
 
 See `docs/scenario-walkthrough.md` for a recruiter-friendly explanation of what the workflow is modeling and where the automation boundary stops.
 
+## Run Tests
+
+```bash
+python3 -m unittest discover -s tests
+```
+
 ## Project Structure
 
 ```text
 synthetic-data/patient-fixtures.json  synthetic demo records
 src/clinical_workflow.py              summary, queue, and safety logic
 examples/run_demo.py                  runnable demo
+tests/test_clinical_workflow.py       guardrail and priority tests
 ```
 
 ## Design Principles
@@ -62,6 +69,5 @@ examples/run_demo.py                  runnable demo
 ## Next Build Ideas
 
 - Add a synthetic CSV import path.
-- Add unit tests for queue priority and safety flags.
 - Add a Streamlit dashboard view for follow-up queues.
 - Add a model-evaluation rubric that compares generated summaries against expected structured outputs.
