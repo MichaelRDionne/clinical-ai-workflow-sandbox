@@ -1,5 +1,7 @@
 # Clinical AI Workflow Sandbox
 
+[![Tests](https://github.com/MichaelRDionne/clinical-ai-workflow-sandbox/actions/workflows/tests.yml/badge.svg)](https://github.com/MichaelRDionne/clinical-ai-workflow-sandbox/actions/workflows/tests.yml)
+
 Synthetic clinical workflow demo for intake summarization, longitudinal snapshots, follow-up queueing, and safety checks.
 
 This repository is designed as a public portfolio project. It demonstrates how I think about clinical AI systems: reduce cognitive load, keep humans in control, make uncertainty visible, and keep sensitive data out of public demos.
