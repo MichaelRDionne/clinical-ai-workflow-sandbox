@@ -10,6 +10,12 @@ This repository is designed as a public portfolio project. It demonstrates how I
 
 The visual demo shows the intended workflow shape: structured synthetic input, generated summary, visible safety flags, and a queue that routes uncertainty back to human review.
 
+## Demo Preview
+
+- Visual: `assets/clinical-workflow-demo.svg`
+- Captured run: `examples/demo-output.txt`
+- Deeper walkthrough: `docs/case-study-intake-to-review-queue.md`
+
 ## What It Shows
 
 - Synthetic patient fixtures with coded IDs only.
@@ -43,7 +49,7 @@ Expected output:
 
 See `examples/demo-output.txt` for a captured example run.
 
-See `docs/scenario-walkthrough.md` for a recruiter-friendly explanation of what the workflow is modeling and where the automation boundary stops.
+See `docs/scenario-walkthrough.md` and `docs/case-study-intake-to-review-queue.md` for recruiter-friendly explanations of what the workflow is modeling and where the automation boundary stops.
 
 ## Run Tests
 
