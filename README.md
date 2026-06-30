@@ -34,6 +34,8 @@ Why it matters: clinical AI tools are easy to demo badly. A useful system has to
 
 This repo contains no real patient data and no production clinical exports. Every example is synthetic and simplified for demonstration. It is not medical advice, not a diagnostic system, and not intended for direct clinical use.
 
+See `DATA_BOUNDARY.md` for the public-data rules used for this sandbox.
+
 ## Run The Demo
 
 ```bash
@@ -64,6 +66,7 @@ synthetic-data/patient-fixtures.json  synthetic demo records
 src/clinical_workflow.py              summary, queue, and safety logic
 examples/run_demo.py                  runnable demo
 tests/test_clinical_workflow.py       guardrail and priority tests
+DATA_BOUNDARY.md                      public data and safety rules
 ```
 
 ## Design Principles
