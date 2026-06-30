@@ -23,6 +23,7 @@ The visual demo shows the intended workflow shape: structured synthetic input, g
 - Longitudinal snapshot generation for follow-up prep.
 - Follow-up queue generation by risk and due date.
 - Safety checks for missing monitoring, escalation flags, and human review.
+- Expected-output evaluation fixtures for synthetic summaries.
 
 ## Recruiter Quick Scan
 
@@ -42,6 +43,12 @@ See `DATA_BOUNDARY.md` for the public-data rules used for this sandbox.
 python3 examples/run_demo.py
 ```
 
+Run the expected-summary evaluation:
+
+```bash
+python3 examples/run_summary_evaluation.py
+```
+
 Expected output:
 
 - A brief intake summary.
@@ -51,7 +58,11 @@ Expected output:
 
 See `examples/demo-output.txt` for a captured example run.
 
+See `examples/summary-evaluation-output.txt` for a captured evaluation run.
+
 See `docs/scenario-walkthrough.md` and `docs/case-study-intake-to-review-queue.md` for recruiter-friendly explanations of what the workflow is modeling and where the automation boundary stops.
+
+See `docs/summary-evaluation.md` for the expected-output fixture approach used to test summary behavior.
 
 ## Run Tests
 
@@ -63,9 +74,13 @@ python3 -m unittest discover -s tests
 
 ```text
 synthetic-data/patient-fixtures.json  synthetic demo records
+synthetic-data/expected-summary-fixtures.json  summary evaluation fixtures
 src/clinical_workflow.py              summary, queue, and safety logic
+src/summary_evaluation.py             expected-output evaluation helper
 examples/run_demo.py                  runnable demo
+examples/run_summary_evaluation.py    runnable evaluation demo
 tests/test_clinical_workflow.py       guardrail and priority tests
+tests/test_summary_evaluation.py      summary expectation tests
 DATA_BOUNDARY.md                      public data and safety rules
 ```
 
@@ -81,4 +96,4 @@ DATA_BOUNDARY.md                      public data and safety rules
 
 - Add a synthetic CSV import path.
 - Add a Streamlit dashboard view for follow-up queues.
-- Add a model-evaluation rubric that compares generated summaries against expected structured outputs.
+- Expand the summary evaluation rubric for uncertainty, usefulness, and escalation handling.

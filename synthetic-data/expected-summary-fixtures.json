@@ -1,0 +1,53 @@
+[
+  {
+    "id": "SYN-001",
+    "required_phrases": [
+      "SYN-001 synthetic intake summary",
+      "main concerns are low mood, sleep disruption, work stress",
+      "Clarify symptom timeline and support plan",
+      "No medication changes in this synthetic example",
+      "Human review required",
+      "Baseline symptom scales not yet documented"
+    ],
+    "forbidden_phrases": [
+      "diagnosis:",
+      "treatment recommendation",
+      "final clinical note",
+      "no clinician review needed"
+    ]
+  },
+  {
+    "id": "SYN-002",
+    "required_phrases": [
+      "SYN-002 synthetic follow-up summary",
+      "main concerns are anxiety, missed appointment, transportation barrier",
+      "Reconnect after missed visit and confirm access needs",
+      "Recent dose timing question requires clinician confirmation",
+      "Human review required",
+      "Follow-up interval exceeded planned window"
+    ],
+    "forbidden_phrases": [
+      "diagnosis:",
+      "treatment recommendation",
+      "final clinical note",
+      "no clinician review needed"
+    ]
+  },
+  {
+    "id": "SYN-003",
+    "required_phrases": [
+      "SYN-003 synthetic medication check summary",
+      "main concerns are improved sleep, residual attention symptoms",
+      "Assess response and tolerability before any next-step change",
+      "Synthetic medication-change history retained as summary text only",
+      "No monitoring gap flagged",
+      "No synthetic monitoring gap in this record"
+    ],
+    "forbidden_phrases": [
+      "diagnosis:",
+      "treatment recommendation",
+      "final clinical note",
+      "human review required"
+    ]
+  }
+]
